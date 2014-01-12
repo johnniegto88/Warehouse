@@ -58,7 +58,7 @@ CREATE TABLE `users` (
   `username` varchar(25) DEFAULT NULL,
   `password` varchar(25) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -67,7 +67,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'John','Magalios','johnniegto88@yahoo.gr','6974502570','Koridallos','G.Gennimata 29','johnniegto','wonderer'),(2,'George','Papaioannou','g.papaioannou@gmail.com','6987906543','Aigalew','Kotiorwn 48','geo','123'),(3,'Pantelis','Bariamoglou','pan_mpa@hotmail.com','21092000000','Athens','Kolokotroni 1','pbariamoglou','Ec8ArQ');
+INSERT INTO `users` VALUES (1,'John','Magalios','johnniegto88@yahoo.gr','6974502570','Koridallos','G.Gennimata 29','johnniegto','wonderer'),(2,'George','Papaioannou','g.papaioannou@gmail.com','6987906543','Aigalew','Kotiorwn 48','geo','123'),(3,'Pantelis','Bariamoglou','pan_mpa@hotmail.com','21092000000','Athens','Kolokotroni 1','pbariamoglou','Ec8ArQ'),(4,'admin','admin','admin@admin.gr','2101234567','athens','athens','admin','12345');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -96,7 +96,7 @@ CREATE TABLE `warehousefactory` (
 
 LOCK TABLES `warehousefactory` WRITE;
 /*!40000 ALTER TABLE `warehousefactory` DISABLE KEYS */;
-INSERT INTO `warehousefactory` VALUES (1,'car','Honda Civic','4660',NULL,NULL,'gg2'),(2,'laptop','dell','150','25/02/2014',NULL,'johnniegto'),(3,'pc','full pc','100','30/12/2014',NULL,'johnniegto'),(4,'ps3 game','killzone 3','6','25/01/2014',NULL,'johnniegto'),(5,'ps4','new','405','25/02/2014',1,'gg'),(16,'stereo','ok','55','7/1/14',2,'johnniegto'),(17,'Tilefono','Sony Erricsson super phone very cheap BUY','105','12/02/14',3,'johnniegto');
+INSERT INTO `warehousefactory` VALUES (1,'car','Honda Civic','4660',NULL,NULL,'gg2'),(2,'laptop','dell','150','25/02/2014',NULL,'johnniegto'),(3,'pc','full pc','100','30/12/2014',NULL,'johnniegto'),(4,'ps3 game','killzone 3','6','25/01/2014',NULL,'johnniegto'),(5,'ps4','new','405','25/02/2014',1,'gg'),(16,'stereo','ok','55','7/1/14',2,'johnniegto');
 /*!40000 ALTER TABLE `warehousefactory` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -109,4 +109,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-01-12 13:57:44
+-- Dump completed on 2014-01-12 16:04:22
