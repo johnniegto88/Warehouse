@@ -202,6 +202,15 @@ public class UserLogin extends JFrame{
 					AuctionsClient	ac = new AuctionsClient(table);
 					ac.setVisible(true);
 						//ac.main(table);
+			
+					String adminuser = "admin";
+					
+					if (adminuser.equals(user)){
+					
+						Admin adm = new Admin();
+						adm.main(null);
+						
+					}
 						
 					} catch (Exception e1) {
 						
