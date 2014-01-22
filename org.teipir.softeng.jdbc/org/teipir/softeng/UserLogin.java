@@ -42,6 +42,7 @@ import org.teipir.softeng.auction.client.AuctionsClient;
 import javax.swing.JCheckBox;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.KeyAdapter;
 
 public class UserLogin extends JFrame{
 
@@ -72,6 +73,7 @@ public class UserLogin extends JFrame{
 				try {
 					UserLogin frame = new UserLogin(null);
 					frame.setVisible(true);
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -91,6 +93,8 @@ public class UserLogin extends JFrame{
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+	
+		
 		
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		contentPane.add(tabbedPane, BorderLayout.CENTER);
@@ -159,6 +163,18 @@ public class UserLogin extends JFrame{
 		passwordField.setColumns(10);
 		
 		JButton btnLgin = new JButton("Login");
+		btnLgin.addKeyListener(new KeyAdapter() {
+			
+			//public void keyPressed(KeyEvent e) {
+				
+			//	if (e.getKeyCode()==KeyEvent.VK_ENTER){
+					
+					//System.out.println("Hello");
+	//			}
+
+		//	}
+		});
+		getRootPane().setDefaultButton(btnLgin);
 		btnLgin.addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent e) {
